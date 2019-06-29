@@ -14,7 +14,7 @@
           title="날짜 선택"
           text="다이어리를 열람/기록할 날짜를 선택해주세요"
         >
-          <FullCalendar defaultView="dayGridMonth" :plugins="calendarPlugins" locale="ko" />
+          <FullCalendar defaultView="dayGridMonth" :plugins="calendarPlugins" locale="ko" weekNumberCalculation="ISO" />
         </material-card>
       </v-flex>
     </v-layout>
