@@ -10,7 +10,7 @@
     width="260"
   >
     <v-img
-      :src="image"
+      :src="require('@/assets/img/drawerbg.jpg')"
       :gradient="sidebarOverlayGradiant"
       height="100%"
     >
@@ -47,7 +47,7 @@
           v-for="(link, i) in links"
           :key="i"
           :to="link.to"
-          :active-class="color"
+          :active-class="'info'"
           avatar
           class="v-list-item"
         >
@@ -57,19 +57,6 @@
           <v-list-tile-title
             v-text="link.text"
           />
-        </v-list-tile>
-        <v-list-tile
-          disabled
-          active-class="primary"
-          class="v-list-item v-list__tile--buy"
-          to="/upgrade"
-        >
-          <v-list-tile-action>
-            <v-icon>mdi-package-up</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-title class="font-weight-light">
-            Upgrade To PRO
-          </v-list-tile-title>
         </v-list-tile>
       </v-layout>
     </v-img>
@@ -87,39 +74,9 @@ export default {
   data: () => ({
     links: [
       {
-        to: '/dashboard',
-        icon: 'mdi-view-dashboard',
-        text: 'Dashboard'
-      },
-      {
-        to: '/user-profile',
-        icon: 'mdi-account',
-        text: 'User Profile'
-      },
-      {
-        to: '/table-list',
-        icon: 'mdi-clipboard-outline',
-        text: 'Table List'
-      },
-      {
-        to: '/typography',
-        icon: 'mdi-format-font',
-        text: 'Typography'
-      },
-      {
-        to: '/icons',
-        icon: 'mdi-chart-bubble',
-        text: 'Icons'
-      },
-      {
-        to: '/maps',
-        icon: 'mdi-map-marker',
-        text: 'Maps'
-      },
-      {
-        to: '/notifications',
-        icon: 'mdi-bell',
-        text: 'Notifications'
+        to: '/',
+        icon: 'mdi-notebook',
+        text: '운동 다이어리'
       }
     ],
     responsive: false

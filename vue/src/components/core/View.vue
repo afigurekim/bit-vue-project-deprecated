@@ -13,7 +13,7 @@
 export default {
   metaInfo () {
     return {
-      title: 'Vuetify Material Dashboard by CreativeTim'
+      title: '운동 다이어리 - URCoach'
     }
   }
 }

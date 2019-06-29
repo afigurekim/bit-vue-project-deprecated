@@ -5,9 +5,10 @@
  */
 export default [
   {
-    path: '/dashboard',
+    path: '/',
     // Relative to /src/views
-    view: 'Dashboard'
+    name: '운동 다이어리',
+    view: 'Home'
   },
   {
     path: '/user-profile',
